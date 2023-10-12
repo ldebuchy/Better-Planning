@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.IMG_FondCase {
+    display: none;
+}
+.innerCase, .TCase {
+    border-radius: 8px;
+    width: 100% !important;
+}
+
+body::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rotation infinite 150ms linear;
+    animation-delay: 0s;
+    z-index : 10000;
+}
+td {
+    border: none !important;
+    padding: 2px !important;
+}
+.TCProf, .TChdeb, .TCSalle {
+    font-size: 0.8rem !important;
+    width: 100% !important;
+}
+#imgToogleTeams , #butTeams {
+    border: none !important;
+    aspect-ratio: 4/3 !important;
+    height: 2rem !important;
+    width: auto !important;
+    object-fit: contain;
+    margin: 0 auto !important;
+}
+#butTeams {
+    margin: 0.5rem 60px !important;
+}
+.BJour img {
+    display: none;
+}
+
+.BJour {
+    border: none !important;
+    width: 19% !important;
+}
+.TCase {
+    border: none !important;
+    font-size: 1.1rem !important;
+}
+.TCJour {
+    background-color: #000000 !important;
+    font-weight: normal !important;
+    border-radius: 8px;
+}
+.CaseOmbre {
+    display: none;
+}
+
+.Tbody {
+    background-color: #000000 !important;
+}
+
+.Case {
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 0px 0px;
+}
+
+#DivEntete {
+    position: absolute;
+    top : 0% !important;
+    height: 3em !important;
+    display: flex;
+    justify-content: center;
+    width: 100vw !important;
+    opacity: 1 !important;
+}
+#DivEntete_Version {
+    display: none;
+}
+#butUp, #butLeft, #butRight{
+    filter: invert(1) grayscale(100%) contrast(100%);;
+    position: absolute !important;
+    top: 0%;
+    right: 80px !important;
+    object-fit: contain;
+    width: 3em !important;
+}
+
+#butUp {
+    margin-left: 2% !important;
+}
+
+#btnPrint {
+    display: none !important;
+}
+
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
